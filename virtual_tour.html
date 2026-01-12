@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trichy SRM Virtual Tour</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+  
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/Header.css">
+    <link rel="stylesheet" href="./assets/css/CursorAnimation.css">
+    <link rel="fav icon" href="./assets/images/fav.png">
+    <link rel="stylesheet" href="./assets/css/virtual_tour.css">
+</head>
+<body>
+  <div id="topbar"></div>
+  <div id="quick-access"></div>    
+  <nav id="header"></nav>
+  <div class="container1">
+    <div class="outerbar">
+      <div class="sidebar">
+        <ul class="location-list" id="locationList"></ul>
+      </div>
+    </div>
+    <div id="panorama">
+      <div class="bottom-controls">
+        <a href="" class="control-btn" id="autoRotateBtn" title="Auto Rotate"><i class="fa-solid fa-arrows-rotate"></i></a>
+        <div class="control-btn" title="Grid View">⊞</div>
+        <div class="control-btn" title="Map View"><i class="fa-solid fa-location-dot"></i></div>
+        <div class="control-btn" title="Gallery">🖼</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/Dom.js"></script>
+  <script src="./assets/js/virtual_tour.js"></script>
+    <div id="google_translate_element" style="display:none;"></div>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
