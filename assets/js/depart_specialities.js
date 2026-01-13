@@ -853,7 +853,13 @@
         ],
 
         infra_desc: "The Department is equipped with state-of-the-art OPD, OT facilities, teaching and research equipment to support academic and diagnostic activities.",
-
+        infra: [
+            "",
+            "",
+            "",
+            "Refraction Room",
+            "",
+        ],
         faculty_desc: "The department has a team of qualified and experienced faculty committed to academic excellence, research, and clinical service.",
 
         doctor: [

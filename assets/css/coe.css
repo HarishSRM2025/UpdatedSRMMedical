@@ -1,0 +1,388 @@
+        .hero-container {
+            margin: 0 auto;
+            background: white;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .coe-hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 20px;
+            padding: 60px;
+            align-items: center;
+        }
+
+        .coe-text-section {
+            animation: slideInLeft 1s ease-out;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #1a202c;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .amount {
+            color: var(--color-primary);
+            font-weight: 700;
+        }
+
+        .coe-subtitle {
+            font-size: 18px;
+            color: #4a5568;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .coe-services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .coe-service-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background: #f7fafc;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .coe-service-item:hover {
+            background: #edf2f7;
+            transform: translateX(5px);
+        }
+
+        .coe-checkmark {
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .coe-checkmark::after {
+            content: '✓';
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .coe-service-text {
+            font-size: 15px;
+            color: #2d3748;
+            font-weight: 500;
+        }
+
+        .coe-benefits-section {
+            background: linear-gradient(135deg, #0065a8 0%, #015180 100%);
+            padding: 24px !important;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            width: 90%;
+            margin: 0 auto;
+            
+        }
+
+        .coe-benefits-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+
+       .coe-inner-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5%;
+       }
+
+        .coe-benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+
+        .coe-benefit-amount {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--color-primary);
+            min-width: 100px;
+        }
+
+        .coe-benefit-text {
+            font-size: 15px;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.5);
+        }
+
+        .coe-image-section {
+            position: relative;
+            animation: slideInRight 1s ease-out;
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .coe-image-wrapper {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .coe-image-wrapper img{
+            width: 100%;
+        }
+
+        .coe-floating-card {
+            position: absolute;
+            background: white;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .coe-floating-card.coe-top {
+            top: 30px;
+            right: -20px;
+        }
+
+        .coe-floating-card.coe-bottom {
+            bottom: 30px;
+            left: -20px;
+        }
+
+        .coe-card-icon {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .coe-card-text {
+            font-size: 14px;
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        @media (max-width: 1024px) {
+            .coe-hero-content {
+                grid-template-columns: 1fr;
+                padding: 40px;
+                gap: 40px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .coe-services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .coe-floating-card {
+                display: none;
+            }
+        }
+
+        @media (max-width: 640px) {
+           
+
+            .coe-hero-content {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .coe-subtitle {
+                font-size: 16px;
+            }
+
+            .coe-benefit-amount {
+                font-size: 20px;
+                min-width: 80px;
+            }
+            .coe-inner-grid{
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 5%;
+                margin-bottom: 5%;
+            }
+        }
+
+        .coe-table-wrapper {
+            overflow-x: auto;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-md);
+        }
+
+        .coe-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--color-white);
+        }
+
+        .coe-table thead {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            color: var(--color-white);
+        }
+
+        .coe-table th {
+            padding: var(--spacing-lg);
+            text-align: left;
+            font-size: var(--font-lg);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .coe-table tbody tr {
+            border-bottom: 1px solid #e0e0e0;
+            transition: all var(--transition);
+        }
+
+
+        .coe-table td {
+            padding: var(--spacing-lg);
+            font-size: var(--font-base);
+            color: var(--color-text-primary);
+        }
+
+        .coe-table td:first-child {
+            font-weight: 600;
+            color: var(--color-primary-dark);
+        }
+
+        .coe-table td:nth-child(2),
+        .coe-table td:nth-child(3) {
+            color: var(--color-secondary);
+            font-weight: 500;
+        }
+
+        .coe-service-name {
+            display: flex;
+            align-items: center;
+        }
+
+        .coe-service-icon {
+            width: 8px;
+            height: 8px;
+            background: var(--color-primary);
+            border-radius: 50%;
+            margin-right: var(--spacing-sm);
+        }
+
+        .coe-note {
+            font-style: italic;
+            color: var(--color-text-secondary);
+            font-size: var(--font-sm);
+        }
+
+        @media (max-width: 768px) {
+       
+
+            .coe-container {
+                padding: var(--spacing-lg) !important;
+            }
+
+            .coe-title {
+                font-size: var(--font-2xl);
+            }
+
+            .coe-table th,
+            .coe-table td,.coe-note {
+                padding: var(--spacing-sm);
+                font-size: 8px;
+            }
+
+            .coe-table th {
+                font-size: 10px;
+            }
+        }
+  .coe-hero-title{
+    font-size: 1.5rem;
+  }
