@@ -514,7 +514,7 @@
       border-right:1px solid #e3e3e3;
       justify-content: center;
     }
-    .quick-links:last-child{
+    .quick-links:nth-last-child(2){
       border-right:none;
     }
     .quick-links p{
