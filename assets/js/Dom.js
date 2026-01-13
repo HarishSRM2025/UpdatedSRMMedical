@@ -1,4 +1,4 @@
-    const topbar = `<div class="top-bar" id="desktop-topbar">
+const topbar = `<div class="top-bar" id="desktop-topbar">
     <div class="top-bar-wrapper">
       <!-- Search Bar -->
        
@@ -6,6 +6,12 @@
       <!-- Quick Links -->
       <div class='myQuickLinks'>
         <div class="quick-links">
+          <p>
+           For Any feedback
+            <a href="#"  class="quick-link featured"><i class="fa-solid fa-file"></i>Fill the form</a>
+          </p>
+        </div>
+         <div class="quick-links">
           <p>
            Register for Free Camps
             <a href="#"  class="quick-link featured"><i class="fa-solid fa-file"></i>Fill the form</a>
@@ -156,12 +162,29 @@
               <a href="./hospital.html">Hospital <span class="arrow dropdown-trigger">&#9654;</span></a>
               <ul class="dropdown">
                 <li><a href="./hospitalNavigator.html">Hospital Mock</a></li>
-               <li><a href="./centerofexcellence.html">Center Of Excellence</a></li>
+                <li><a href="./centerofexcellence.html">Center Of Excellence</a></li>
+               <li><a href="./hospital_department.html">Department</a></li>
                <li class="has-submenu" data-submenu="milestones">
                 <a href="./patientcorner.html">Our Services<span class="arrow submenu-trigger">&#9654;</span></a>
                 <ul class="sub-dropdown">
-
-                  <li><a href="./hospital.html#services">Diagnostic Laboratory</a></li>
+                  <li class="has-submenu" data-submenu="milestones">
+                    <a href="#">Supporting Services<span class="arrow submenu-trigger">&#9654;</span></a>
+                    <ul class="sub-dropdown">
+                      <li><a href="./bioengineering.html">Bio Medical Engineering</a></li>
+                      <li><a href="./bioethics.html">Bio Ethics</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-submenu" data-submenu="milestones">
+                    <a href="./donor.html">Donors <span class="arrow submenu-trigger">&#9654;</span></a>
+                    <ul class="sub-dropdown">
+                      <li><a href="./blood_donor.html">Blood Donor</a></li>
+                      <li><a href="./blood_donor.html#blood_bank2">Blood Bank</a></li>
+                      <li><a href="./organ_donor.html">Organ Donor</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="./information.html">Information Center</a></li>
+                  <li><a href="./ambulance.html">24/7 Ambulance Services</a></li>
+                  <li><a href="./medicalpackage.html">Diagnostic Laboratory</a></li>
                   <li><a href="./hospital.html#specialties">Speciality Clinics</a></li>
                   <li><a href="./camps.html">Health Camps</a></li>
                   <li><a href="#">Consultant</a></li>
@@ -180,24 +203,9 @@
               </ul>
               </li>
 
-               <li class="has-submenu" data-submenu="milestones">
-              <a href="#">Supporting Services<span class="arrow submenu-trigger">&#9654;</span></a>
-              <ul class="sub-dropdown">
-              <li><a href="./bioengineering.html">Bio Medical Engineering</a></li>
-              <li><a href="./bioethics.html">Bio Ethics</a></li>
-              </ul>
-              </li>
+               
               
-              <li class="has-submenu" data-submenu="milestones">
-              <a href="./donor.html">Donors <span class="arrow submenu-trigger">&#9654;</span></a>
-              <ul class="sub-dropdown">
-              <li><a href="./blood_donor.html">Blood Donor</a></li>
-              <li><a href="./blood_donor.html#blood_bank2">Blood Bank</a></li>
-              <li><a href="./organ_donor.html">Organ Donor</a></li>
-              </ul>
-              </li>
-              <li><a href="./information.html">Information Center</a></li>
-              <li><a href="./ambulance.html">24/7 Ambulance Services</a></li>
+              
             </ul>
           </li>
            
