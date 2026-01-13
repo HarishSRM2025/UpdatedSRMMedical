@@ -270,7 +270,7 @@ const activities = [
                 },
                 {
                     name: "B. Vallab Ganesh Bharadwaj",
-                    profileImage:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoIC801LEXM0O7ZWYP4_W3Tj9YTwZ82rToeQ&s",
+                    profileImage:"./assets/images/researchers/coordinator2.JPG",
                     position: "Coordinator",
                     specialization: "Research Scientist & Technical Manager – Molecular Biology ",
                     projects: 4,
