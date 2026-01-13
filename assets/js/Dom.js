@@ -211,6 +211,7 @@
             </ul>
           </li>
           <li><a href="contact.html">Contact</a></li>
+          <li ><a href="iqac.html"  class="nmc-nav nmc-nav2">IQAC</a></li>
           <li><a href="nmc.html" class="nmc-nav nmc-nav1">NMC</a></li>
           <li><a href="virtual_tour.html" target="_blank" class="nmc-nav nmc-nav2" title='Trichy SRM Medical College Campus Tour'><img src='./assets/images/360.png' style='width:21px'></a></li>
         </ul>
